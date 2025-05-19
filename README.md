@@ -15,7 +15,7 @@ Here is what I have learned from the project:
 - Dropping of the C2 payload on the Windows VM
 - Analyzing the telemetry and EDR using LimaCharlie to detect the Sliver attack and defend it.
 
-Setting up:
+#Setting up:
 
 I setup a Windows VM (victim) and Linux VM (attacker), using VMWare Workstation.
 
