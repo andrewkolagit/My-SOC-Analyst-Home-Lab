@@ -7,7 +7,7 @@ As I started to do this project, I realized that it wasn't just about understand
 
 Here is what I have learned from the project:
 * Setting up virtual environments on the VMWare Workstation
-* Deploying an Ubuntu Live Server and a Windows VM
+* Deploying an Linux VM (Ubuntu Live Server) and a Windows VM
 * Configuring the Windows security settings via Registry, Safe Mode, and PowerShell
 * Using Command Prompt, PowerShell, and Linux CLI's
 * Using SSH to access the Linux shell from a personal computer
