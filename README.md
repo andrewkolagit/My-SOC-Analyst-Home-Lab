@@ -34,12 +34,18 @@ Once that was done I had to setup LimaCharlie EDR on the Windows VM. This involv
 Now that was done, I had to install Sliver, a post-exploitation C2 framework, in my Linux VM. Installing it was simple as following the instructions in the blog. Now I had to generate a C2 payload within the Sliver application which was paired with my VM's IP address.
 
 Then using a starting a Python server on my Linux VM, I used it to download the C2 payload onto my Windows VM.
+\
+![](images/download_file.png)
 
 ## Starting a C2 Session:
-Now that I was all set, I proceeded to start my C2 session by starting a http port on the Sliver Shell and then all I needed to do was access the payload on my Windows VM.
-
-This started a session and we can then access this session through the sliver shell. I used it to get information about the session, the Windows VM, the privileges that my session has, finding the working directory, etc.
-
+Now that I was all set, I proceeded to start my C2 session by starting a http port on the Sliver Shell and then all I needed to do was access the payload on my Windows VM.\
+\
+![](images/whoami.png)
+\
+\
+This started a session and we can then access this session through the sliver shell. I used it to get information about the session, the Windows VM, the privileges that my session has, finding the working directory, etc.\
+![](info,pwd,netstat.png)
+\
 If we open the Processes section in our LimaCharlie Sensor, we can look for our C2 process, with the search bar and find it and we can see he details, which displays the Source IP as well as the Process ID it is running as.
 
 Diving further into the File System section of the sensor, we can find the payload exactly where we downloaded it and check the hash of the executable file with VirusTotal.
