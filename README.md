@@ -65,7 +65,7 @@ If we go to the Timeline section of the Sensor, we can also see the first time t
 Now it was time to attack and view the attack using LimaCharlie.
 
 ## The Attack:
-I will simulate an attack by attempting credential dumping using LSASS dumping (it will not dump any actual data but will generate data for the sensor.)\
+I will simulate an attack by attempting credential dumping using LSASS dumping (it will not dump any actual data but will generate event log data for the sensor).\
 \
 ![](images/lsass_dump.png)\
 ![](images/event.png)\
@@ -82,4 +82,4 @@ Now, when I try the same attack again, we can see the LSASS access attempt in ou
 ## Conclusion:
 This project provided a comprehensive, hands-on introduction to both defensive and offensive cybersecurity practices. By setting up a virtual lab, deploying a Windows and Linux VM, and using tools like LimaCharlie and Sliver, I gained valuable experience in endpoint configuration, threat emulation, and real-time telemetry analysis. Most importantly, I learned how to detect and respond to attacks using LimaCharlie’s EDR capabilities, including building custom Detection & Response rules based on observed malicious behavior. This was a really great SOC Home Lab setup from start to finish.
 
-I thank Eric Capuano in creating this project which really helps a beginner like me to understand a part of what an SOC Analyst does and dive into the works they do. I also thank Gerald Auger (Simply Cyber YouTube) for the video he made on how to set it up, leading step by step.
+I thank Eric Capuano in creating this project which really helps a beginner like me to understand a part of what an SOC Analyst does as I dive into field. I also thank Gerald Auger (Simply Cyber YouTube) for the video he made on how to set it up, leading step by step.
