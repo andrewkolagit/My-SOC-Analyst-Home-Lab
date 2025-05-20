@@ -46,6 +46,7 @@ Now that I was all set, I proceeded to start my C2 session by starting a http po
 This started a session and we can then access this session through the sliver shell. I used it to get information about the session, the Windows VM, the privileges that my session has, finding the working directory, etc.\
 ![](images/info,pwd,netstat.png)\
 ![](images/ps.png)\
+![](images/payloa.png)\
 If we open the Processes section in our LimaCharlie Sensor, we can look for our C2 process, with the search bar and find it and we can see he details, which displays the Source IP as well as the Process ID it is running as.\
 \
 ![](images/processes.png)
