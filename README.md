@@ -44,15 +44,21 @@ Now that I was all set, I proceeded to start my C2 session by starting a http po
 \
 \
 This started a session and we can then access this session through the sliver shell. I used it to get information about the session, the Windows VM, the privileges that my session has, finding the working directory, etc.\
-![](info,pwd,netstat.png)
+![](images/info,pwd,netstat.png)\
+![](images/ps.png)\
+If we open the Processes section in our LimaCharlie Sensor, we can look for our C2 process, with the search bar and find it and we can see he details, which displays the Source IP as well as the Process ID it is running as.\
 \
-If we open the Processes section in our LimaCharlie Sensor, we can look for our C2 process, with the search bar and find it and we can see he details, which displays the Source IP as well as the Process ID it is running as.
+![](images/processes.png)
 
-Diving further into the File System section of the sensor, we can find the payload exactly where we downloaded it and check the hash of the executable file with VirusTotal.
+Diving further into the File System section of the sensor, we can find the payload exactly where we downloaded it and check the hash of the executable file with VirusTotal.\
+\
+![](images/payload_hash.png)\
+![](images/virus_total.png)
 
 While it does say that the hash is not found on VirusTotal, it doesn't mean that the executable is safe. The way it is explained in the blog is, VirusTotal has just never seen the file before, as VirusTotal will compare as to whether it has ever seen this hash before.
 
-If we go to the Timeline section of the Sensor we can also see the first time this payload had been accessed.
+If we go to the Timeline section of the Sensor we can also see the first time this payload had been accessed.\
+![](images/event.png)
 
 Now it was time to attack and see the attack using LimaCharlie.
 
