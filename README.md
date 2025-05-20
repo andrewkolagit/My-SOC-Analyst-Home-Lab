@@ -21,12 +21,16 @@ I setup a Windows VM (victim) and Linux VM (attacker), using VMWare Workstation.
 
 Setting up the Windows VM involved, turning off Windows Antivirus and Disabling some functions in the Windows Registry, I installed Sysmon on the Windows System which was goin to be accessed with the help of LimaCharlie.
 
-On the Linux VM (Ubuntu Server as suggested by the blog post), I had to configure the subnet and gateway IP of the ens33 IPv4 ethernet connection. I ran into an error where the name of the netplan file wass differnet from what Eric had, but that stop the process.\
-![Screenshot of different name.](different_netplan_file.png)
-<br/>
-![Network settings on the Linux VM](linux_network.png)
-Once that was done I had to setup LimaCharlie EDR on the Windows VM. This involved making a new Sensor in my LimaCharlie Organization for my Windows VM and install the sensor on the VM (my endpoint). Once that was done I had to, configure LimaCharlie to ship the Sysmon event logs to it's EDR telemetry by creating an Artifact Collection Rule.
-
+On the Linux VM (Ubuntu Server as suggested by the blog post), I had to configure the subnet and gateway IP of the ens33 IPv4 ethernet connection. I ran into an error where the name of the netplan file wass differnet from what Eric had, but that didn't stop the process of editing it.\
+\
+![Screenshot of different name.](images/different_netplan_file.png)\
+\
+![Network settings on the Linux VM](images/linux_network.png)\
+\
+Once that was done I had to setup LimaCharlie EDR on the Windows VM. This involved making a new Sensor in my LimaCharlie Organization for my Windows VM and install the sensor on the VM (my endpoint). Once that was done I had to, configure LimaCharlie to ship the Sysmon event logs to it's EDR telemetry by creating an Artifact Collection Rule.\
+\
+![Screenshot of Artifact Collection Rule.](images/windows_sysmon_logs.png)\
+\
 Now that was done, I had to install Sliver, a post-exploitation C2 framework, in my Linux VM. Installing it was simple as following the instructions in the blog. Now I had to generate a C2 payload within the Sliver application which was paired with my VM's IP address.
 
 Then using a starting a Python server on my Linux VM, I used it to download the C2 payload onto my Windows VM.
