@@ -1,7 +1,7 @@
 # My SOC Analyst Home Lab
-This project was completed following Eric Capuano's blog series, "So You Want to Be a SOC Analyst?". It involved hands-on experience in setting up, running, and analyzing security tools and processes fundamental to the role of a SOC Analyst, providing practical skills in threat detection, incident response, and proactive cybersecurity operations.
+This project was completed following Eric Capuano's blog series, "So You Want to Be a SOC Analyst?" & Gerald Auger's (Simply Cyber YouTube) video, "Uncover the Secrets of a Home SOC Analyst Lab!". It involved hands-on experience in setting up, running, and analyzing security tools and processes fundamental to the role of a SOC Analyst, providing practical skills in threat detection, incident response, and proactive cybersecurity operations.
 
-As I began building my cybersecurity knowledge, extensive research led me to Eric Capuano's highly recommended project, "[So You Want to Be a SOC Analyst?](https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-intro)", renowned for its practical, hands-on approach to learning essential security operations skills.
+As I began building my cybersecurity knowledge, extensive research led me to Eric Capuano's highly recommended project, "[So You Want to Be a SOC Analyst?](https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-intro)", renowned for its practical, hands-on approach to learning essential security operations skills. I used Gerald Auger's (Simply Cyber YouTube) video, "[Uncover the Secrets of a Home SOC Analyst Lab!](https://www.youtube.com/watch?v=oOzihldLz7U)" to help guide me.
 
 As I started to do this project, I realized that it wasn't just about understanding the defensive side of security but also the offensive side of security.
 
