@@ -65,7 +65,7 @@ If we go to the Timeline section of the Sensor, we can also see the first time t
 Now it was time to attack and view the attack using LimaCharlie.
 
 ## The Attack:
-I will simulate an attack by attempting credential dumping using LSASS dumping, which will not dump any actual data but will generate data for the sensor.\
+I will simulate an attack by attempting credential dumping using LSASS dumping (it will not dump any actual data but will generate data for the sensor.)\
 \
 ![](images/lsass_dump.png)\
 ![](images/event.png)\
